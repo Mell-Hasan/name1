@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #08070f;
+}
+
+.cont {
+    width: 35%;
+    position: relative;
+
+    .block1 {
+        position: absolute;
+        z-index: 1;
+        top: -75px;
+        left: -75px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background: rgb(0, 52, 193);
+        background: linear-gradient(119deg, rgba(0, 52, 193, 1) 16%, rgba(5, 94, 186, 1) 55%, rgba(19, 187, 186, 1) 92%);
+    }
+
+    .block2 {
+        position: absolute;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        right: -75px !important;
+        bottom: -75px !important;
+        background: rgb(193, 35, 0);
+        background: linear-gradient(117deg, rgba(193, 35, 0, 1) 16%, rgba(186, 111, 5, 1) 50%, rgba(231, 224, 0, 1) 92%);
+    }
+
+    form {
+        z-index: 2;
+        position: relative;
+        background-color: rgba(112, 112, 112, 0.453);
+        padding: 30px 20px;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+
+        h1 {
+            color: white;
+            font-size: 34px;
+            text-align: center;
+            margin: 10px 0;
+            text-transform: capitalize;
+        }
+
+        .inpDiv {
+            margin: 10px 0;
+
+            label {
+                font-size: 18px;
+                color: white;
+                font-weight: 700;
+                text-transform: capitalize;
+            }
+
+            input {
+                width: 95%;
+                padding: 10px;
+                border-radius: 7px;
+                background-color: rgba(172, 172, 172, 0.453);
+                color: white;
+                margin: 8px 0;
+                font-size: 18px;
+                outline: none;
+                border: none;
+
+                &::placeholder {
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        #btnDiv {
+            margin: 15px 0;
+
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: white;
+                border-radius: 7px;
+                border: none;
+                color: rgba(77, 77, 77, 0.659);
+                font-size: 26px;
+                font-weight: 700;
+                cursor: pointer;
+                text-transform: capitalize;
+            }
+        }
+
+        .other {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(197, 197, 197, 0.453);
+                padding: 4px;
+                color: white;
+                border-radius: 7px;
+                font-size: 18px;
+                font-weight: 700;
+                text-decoration: none;
+
+                .icon {
+                    height: 18px;
+                    width: 18px;
+                    fill: white;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

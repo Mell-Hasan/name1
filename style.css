@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #08070f;
+}
+
+.cont {
+  width: 35%;
+  position: relative;
+}
+
+.cont .block1 {
+  position: absolute;
+  z-index: 1;
+  top: -75px;
+  left: -75px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: #0034c1;
+  background: linear-gradient(119deg, #0034c1 16%, #055eba 55%, #13bbba 92%);
+}
+
+.cont .block2 {
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  right: -75px !important;
+  bottom: -75px !important;
+  background: #c12300;
+  background: linear-gradient(117deg, #c12300 16%, #ba6f05 50%, #e7e000 92%);
+}
+
+.cont form {
+  z-index: 2;
+  position: relative;
+  background-color: rgba(112, 112, 112, 0.453);
+  padding: 30px 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+.cont form h1 {
+  color: white;
+  font-size: 34px;
+  text-align: center;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.cont form .inpDiv {
+  margin: 10px 0;
+}
+
+.cont form .inpDiv label {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.cont form .inpDiv input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgba(172, 172, 172, 0.453);
+  color: white;
+  margin: 8px 0;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.cont form .inpDiv input::-webkit-input-placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.cont form .inpDiv input:-ms-input-placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.cont form .inpDiv input::-ms-input-placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.cont form .inpDiv input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.cont form #btnDiv {
+  margin: 15px 0;
+}
+
+.cont form #btnDiv button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+  border: none;
+  color: rgba(77, 77, 77, 0.659);
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.cont form .other {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cont form .other a {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(197, 197, 197, 0.453);
+  padding: 4px;
+  color: white;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cont form .other a .icon {
+  height: 18px;
+  width: 18px;
+  fill: white;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
